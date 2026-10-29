@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Top Front-end Books</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Manrope:wght@200..800&display=swap"
+		rel="stylesheet">
+
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<style>
+		@keyframes fadeUp {
+			from {
+				opacity: 0;
+				transform: translateY(12px);
+			}
+
+			to {
+				opacity: 2;
+				transform: translateY(0);
+			}
+		}
+
+		.fade-up {
+			animation: fadeUp 0.5s ease both;
+		}
+	</style>
+</head>
+
+<body class="bg-slate-100 text-slate-900" style="font-family: Manrope, sans-serif;">
+	<header class="bg-gradient-to-b from-blue-900 to-cyan-900 text-white">
+
+		<div class="mx-auto w-[min(1000px,92vw)] py-8 text-center sm:text-center fade-up" style="font-family: Cinzel, serif;">
+			<h1 class="text-3xl font-bold">Top Front-end Books</h1>
+			<p class="mt-2 text-slate-200">Sua biblioteca de livros de Front-end</p>
+		</div>
+
+		<nav class="menu mx-auto flex w-[min(1000px,92vw)] justify-center gap-4 py-4 text-sm font-semibold sm:text-sm sm:text-base fade-up">
+			<a href="#about">Sobre</a>
+			<a href="#books">Livros</a>
+			<a href="#contact">Contato</a>
+		</nav>
+	</header>
+
+	<main class="mx-auto w-[min(1000px,92vw)] py-8">
+		<section class="mb-8 rounded-xl bg-white p-6 shadow fade-up">
+			<h2 class="text-xl font-semibold">Sobre</h2>
+			<p class="mt-2 text-slate-700">
+				Esta pagina apresente uma seleção de livros de Front-end para desenvolvedores e entusiastas da área. A coleção inclui livros que abordam HTML, CSS, JavaScript, frameworks e boa práticas de desenvolvimento.
+			</p>
+		</section>
+
+		<section id ="books" class="mb-8 rounded-xl bg-white p-6 shadow fade-up">
+			<h2 class="mb-4 text-2xl font-semibold">Livros</h2>
+			<div id="book-list" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+		</section>
+	</main>
+
+	<footer id="contact" class="border-t border-slate-200 bg-white align-center text-center text-sm text-slate-600">
+		<div class="py-6 text-slate-600">
+			Contato: 
+			<br>front.books@gmail.com.br
+			<br>(11) 99999-9999
+		</div>
+
+		<div class="mx-auto w-[min(1000px,92vw)] py-6 text-slate-00">
+			&copy; 2026 Top Front-end Books. Todos os direitos reservados.
+		</div>
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
